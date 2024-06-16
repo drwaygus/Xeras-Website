@@ -23,7 +23,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Advanced Discord Bot Website</title>
+    <title>Xeras Bot Komutları</title>
 </head>
 
 <body class="on">
@@ -52,20 +52,20 @@
                 <div class="card p-3">
                     <h5>Select Commands Category</h5>
                     <hr />
-                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; Tüm Komutlar</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderasyon Komutları</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Eğlence Komutları</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Ekonomi Komutları</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Komutları</button>
                     
                 </div>
             </div>
             <div class="col-md-8 my-2">
-                <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
+                <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Komutları arayın!" />
                 
                     
                         <div class="mt-4"></div>
@@ -77,15 +77,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fban">
-                                             /ban&nbsp; <span class="command-descreption">- ban a member</span>
+                                             /ban&nbsp; <span class="command-descreption">- Sunucudaki üyeyi sunucudan engeller</span>
                                         </button>
                                     </h2>
                                     <div id="fban" class="accordion-collapse collapse" data-bs-parent="#ban">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek Kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /ban @memebr<br>
+                                                    /ban @üye<br>
                                                 
                                             </span>
                                         </div>
@@ -98,15 +98,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkick">
-                                             /kick&nbsp; <span class="command-descreption">- kick a member</span>
+                                             /at&nbsp; <span class="command-descreption">- Sunucudaki üyeyi sunucudan atar</span>
                                         </button>
                                     </h2>
                                     <div id="fkick" class="accordion-collapse collapse" data-bs-parent="#kick">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /kick @memebr
+                                                    /at @üye
                                                 
                                             </span>
                                         </div>
@@ -119,15 +119,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmute">
-                                             /mute&nbsp; <span class="command-descreption">- mute a member</span>
+                                             /mute&nbsp; <span class="command-descreption">- Sunucudaki Kullanıcıyı Susturur</span>
                                         </button>
                                     </h2>
                                     <div id="fmute" class="accordion-collapse collapse" data-bs-parent="#mute">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek Kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /mute @member
+                                                    /mute @kullanıcı 2m
                                                 
                                             </span>
                                         </div>
@@ -145,15 +145,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-                                             /help&nbsp; <span class="command-descreption">- Bot&#39;s help menu</span>
+                                             /helper&nbsp; <span class="command-descreption">- Bot&#39;s Yardımcı menüsünü açar</span>
                                         </button>
                                     </h2>
                                     <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /help<br>/help command:ban
+                                                    /helper<br>/helper
                                                 
                                             </span>
                                         </div>
@@ -166,15 +166,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
-                                             /ping&nbsp; <span class="command-descreption">- Get bot&#39;s host server status &amp; latency</span>
+                                             +ping&nbsp; <span class="command-descreption">- Botun&#39;s host gecikmesini &amp; ms değerinden gösterir</span>
                                         </button>
                                     </h2>
                                     <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /ping
+                                                    +ping
                                                 
                                             </span>
                                         </div>
@@ -187,15 +187,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvite">
-                                             /invite&nbsp; <span class="command-descreption">- Invite bot to your server</span>
+                                             +davet-et&nbsp; <span class="command-descreption">- Botu sunucunuza davet edersiniz</span>
                                         </button>
                                     </h2>
                                     <div id="finvite" class="accordion-collapse collapse" data-bs-parent="#invite">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /invite
+                                                    +davet-et
                                                 
                                             </span>
                                         </div>
@@ -213,15 +213,15 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fleaderboard">
-                                             /leaderboard&nbsp; <span class="command-descreption">- Get your servers leaderboards </span>
+                                             +sıralama&nbsp; <span class="command-descreption">- Sunucudaki para ve seviye sıralamasını gösterir </span>
                                         </button>
                                     </h2>
                                     <div id="fleaderboard" class="accordion-collapse collapse" data-bs-parent="#leaderboard">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Örnek kullanım:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /leaderboard
+                                                    +sıralama
                                                 
                                             </span>
                                         </div>
